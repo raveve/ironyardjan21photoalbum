@@ -10,10 +10,87 @@ $(document).ready(function() {
   var $houston = $('nav a').eq(4);
   var $au = $('nav a').eq(5);
   var $oregon = $('nav a').eq(6);
-  // navigation as a whole
+  // home links
+  var $disneyHome = $('.home a').eq(0);
+  var $houstonHome = $('.home a').eq(1);
+  var $montanaHome = $('.home a').eq(2);
+  var $auHome = $('.home a').eq(3);
+  var $nyHome = $('.home a').eq(4);
+  var $oregonHome = $('.home a').eq(5);
+
+  // event bindings for each click of home links
+  $(".home a").click(function(){
+    $('aside').show();
+  });
+
+  $disneyHome.click(function (event) {
+    event.preventDefault();
+
+    $(this).closest("nav li").siblings().removeClass("activeNav");
+    $(this).closest("nav li").addClass("activeNav");
+    $('.home').removeClass("active");
+    $('.disney').siblings().removeClass("active");
+    $('.disney').addClass('active');
+
+  });
+
+  $montanaHome.click(function (event) {
+    event.preventDefault();
+
+    $(this).closest("nav li").siblings().removeClass("activeNav");
+    $(this).closest("nav li").addClass("activeNav");
+    $('.home').removeClass("active");
+    $('.montana').siblings().removeClass("active");
+    $('.montana').addClass('active');
+
+  });
+
+  $nyHome.click(function (event) {
+    event.preventDefault();
+
+    $(this).closest("nav li").siblings().removeClass("activeNav");
+    $(this).closest("nav li").addClass("activeNav");
+    $('.home').removeClass("active");
+    $('.ny').siblings().removeClass("active");
+    $('.ny').addClass('active');
+
+  });
+
+  $houstonHome.click(function (event) {
+    event.preventDefault();
+
+    $(this).closest("nav li").siblings().removeClass("activeNav");
+    $(this).closest("nav li").addClass("activeNav");
+    $('.home').removeClass("active");
+    $('.houston').siblings().removeClass("active");
+    $('.houston').addClass('active');
+
+  });
+
+  $auHome.click(function (event) {
+    event.preventDefault();
+
+    $(this).closest("nav li").siblings().removeClass("activeNav");
+    $(this).closest("nav li").addClass("activeNav");
+    $('.home').removeClass("active");
+    $('.au').siblings().removeClass("active");
+    $('.au').addClass('active');
+
+  });
+
+  $oregonHome.click(function (event) {
+    event.preventDefault();
+
+    $(this).closest("nav li").siblings().removeClass("activeNav");
+    $(this).closest("nav li").addClass("activeNav");
+    $('.home').removeClass("active");
+    $('.oregon').siblings().removeClass("active");
+    $('.oregon').addClass('active');
+
+  });
 
 
-  // our event bindings for each click of the header navs
+  // our event bindings for each click of the nav items
   $home.click(function (event) {
     event.preventDefault();
     var $myLi = $(this).closest("li");

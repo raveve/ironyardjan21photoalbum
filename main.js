@@ -10,6 +10,8 @@ $(document).ready(function() {
   var $houston = $('nav a').eq(4);
   var $au = $('nav a').eq(5);
   var $oregon = $('nav a').eq(6);
+  // navigation as a whole
+
 
   // our event bindings for each click of the header navs
   $home.click(function (event) {
@@ -19,10 +21,15 @@ $(document).ready(function() {
 
     $mySiblings.removeClass("activeNav");
     $myLi.addClass("activeNav");
-    $('.home').siblings().removeClass("active");
+    $('.disney').siblings().removeClass("active");
     $('.home').addClass('active');
 
   });
+
+  $("#hide").click(function(){
+    $('aside').hide();
+  });
+
 
   $disney.click(function (event) {
     event.preventDefault();

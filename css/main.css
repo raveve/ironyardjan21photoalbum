@@ -34,7 +34,9 @@ h1 {
 
 aside {
   width: 20%;
-  background: #261420; }
+  background: #261420;
+  display: inline-block;
+  float: left; }
 
 .vertical-nav li {
   list-style-type: none; }
@@ -42,12 +44,10 @@ aside {
 a {
   text-decoration: none; }
 
-aside {
-  display: inline-block; }
-
 .half {
   width: 30%;
-  display: inline-block; }
+  display: inline-block;
+  float: right; }
 
 h2 {
   color: #261420;

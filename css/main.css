@@ -33,7 +33,7 @@ h1 {
   width: 100%; }
 
 aside {
-  width: 30%;
+  width: 25%;
   background: #962D3E;
   display: inline-block;
   float: left; }
@@ -46,7 +46,7 @@ a {
   color: #343642; }
 
 .half {
-  width: 35%;
+  width: 30%;
   display: inline-block;
   float: right; }
 

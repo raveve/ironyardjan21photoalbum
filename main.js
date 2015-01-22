@@ -96,8 +96,8 @@ $(document).ready(function() {
     var $myLi = $(this).closest("li");
     var $mySiblings = $myLi.siblings();
 
-    $mySiblings.removeClass("activeNav");
-    $myLi.addClass("activeNav");
+    $(this).closest("li").removeClass("activeNav");
+    $(this).closest("li").addClass("activeNav");
     $('.disney').siblings().removeClass("active");
     $('.home').addClass('active');
 

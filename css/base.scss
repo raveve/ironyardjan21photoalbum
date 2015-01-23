@@ -13,36 +13,53 @@ body {
 }
 header {
   background: $header-nav-color;
-  height: 100px;
+  height: 75px;
   width: 100%;
   margin: 0;
-  margin-top: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 h1 {
   color: $accent-color;
-  font-size: 64px;
+  font-size: 50px;
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .home {
   width: 100%;
 }
 
+.home-albums {
+  width: 70%;
+  margin-left: 20%;
+  margin-right: 10%;
+}
+
 .third {
-  width: 33%;
+  width: 28%;
   display: inline-block;
 }
 
 .image-wrap {
   border: 2px solid $bright-accent-color;
-  width: 80%;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 15px;
 }
 
 .image-wrap img {
   width: 100%;
+}
+
+.image-wrap p {
+  text-align: center;
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
 
 aside {
@@ -61,9 +78,10 @@ a {
 }
 
 .half {
-  width: 30%;
+  width: 25%;
   display: inline-block;
   float: right;
+  margin-right: 8%;
 }
 
 h2 {
@@ -74,6 +92,8 @@ h2 {
 
 nav {
   display: block;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 nav li {
@@ -88,7 +108,7 @@ nav a:hover {
   border: 2px solid $bright-accent-color;
 }
 
-.activeNav a {
+.activeNav {
   border: 2px solid $bright-accent-color;
 }
 

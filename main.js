@@ -44,6 +44,7 @@ $(document).ready(function() {
 
     $("aside").removeClass("active");
     $("article").removeClass("active");
+    $(this).removeClass("activeNav");
     $(".home-albums a").removeClass("activeNav");
   });
 

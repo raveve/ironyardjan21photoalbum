@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-// From home page links to individual album pages with nav activated for album selected
+// Home page links to individual album pages with nav activated for album selected
   $(".home a").click(function (event) {
     event.preventDefault();
 
@@ -49,24 +49,39 @@ $(document).ready(function() {
   });
 
 
+// Takes us to full photo view from album after clicking on photo text link
+  $(".album-container a").click(function (event) {
+    event.preventDefault();
 
-  //$(".container a").click(function (event) {
-    //event.preventDefault();
+    console.log("this is class: ", $(this).attr("article class"));
 
-    //console.log("this is rel: ", $(this).attr("rel"));
+    $("aside").removeClass("active");
+    $(".album-container article").removeClass("active");
+    $(".ind-photo-background").addClass("active");
 
-    //var relatedClass = $(this).attr('rel');
+// Pull photo info / caption and make that text a variable
+    var photoInfo = $(this).text();
+// Subbing photo info / caption text into the h2
+    $(".ind-photo-background h2").text(photoInfo);
 
-    //$(this).closest("li").children().removeClass("activeNav");
-    //$(this).addClass("activeNav");
+// Pull img source from photo info / caption clicked and make that a variable
+    var image = $(this).find("img").attr("src");
+// Change image on full view to source of image from photo info / caption selected
+    $(".ind-photo-background img").attr("src", image);
 
+  });
 
-    //$(relatedClass).siblings().removeClass("active");
-    //$(relatedClass).addClass('active');
+// Goes back to album view from back to album link on large photo view
+  $(".ind-photo-background a").click(function (event) {
+    event.preventDefault();
 
-    //console.log(relatedClass);
-  //});
+    console.log("this is back to album click");
 
+    var relatedClass = $(".activeNav").attr('rel');
 
+    $(".ind-photo-background").removeClass("active");
+    $("aside").addClass("active");
+    $(relatedClass).addClass("active");
+  });
 
 });

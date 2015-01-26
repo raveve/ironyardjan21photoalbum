@@ -73,8 +73,8 @@ h2 {
 
 nav {
   display: block;
-  padding-top: 100px;
-  padding-bottom: 100px; }
+  padding-top: 50px;
+  padding-bottom: 50px; }
 
 nav li {
   padding: 15px; }
@@ -89,13 +89,27 @@ nav a:hover {
   border: 2px solid #F2EBC7; }
 
 .ind-photo-background {
-  background: #8C7E72;
-  height: 650px;
+  background: #343642;
+  height: 600px;
   width: 100%;
   margin-bottom: 85px;
-  margin-top: 85px; }
+  margin-top: 60px; }
+  .ind-photo-background h2 {
+    color: #348899;
+    margin: 0;
+    padding-bottom: 15px; }
+  .ind-photo-background a {
+    color: #962D3E;
+    margin-top: 10px;
+    padding: 10px;
+    background: #979C9C;
+    border: 2px solid #962D3E; }
   .ind-photo-background img {
-    width: 35%; }
+    width: 35%;
+    display: block;
+    margin: 0 auto; }
+  .ind-photo-background div {
+    padding: 25px; }
 
 article, .home, aside {
   display: none; }

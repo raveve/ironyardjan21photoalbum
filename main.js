@@ -24,14 +24,14 @@ $(document).ready(function() {
 
     console.log("this is rel: ", $(this).attr("rel"));
 
-    var relatedClass = $(this).attr('rel');
+    var relatedClass = $(this).attr("rel");
 
     $(this).closest("li").siblings().children().removeClass("activeNav");
     $(this).addClass("activeNav");
 
 
     $(relatedClass).siblings().removeClass("active");
-    $(relatedClass).addClass('active');
+    $(relatedClass).addClass("active");
 
     console.log(relatedClass);
   });
@@ -77,10 +77,11 @@ $(document).ready(function() {
 
     console.log("this is back to album click");
 
-    var relatedClass = $(".activeNav").attr('rel');
+    var relatedClass = $(".activeNav").attr("rel");
 
     $(".ind-photo-background").removeClass("active");
     $("aside").addClass("active");
+    $(".album-container article").removeClass("active");
     $(relatedClass).addClass("active");
   });
 
